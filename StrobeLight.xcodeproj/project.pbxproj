@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B8A6AB21E68019600607BC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A6AB11E68019600607BC4 /* AppDelegate.swift */; };
-		8B8A6AB41E68019600607BC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A6AB31E68019600607BC4 /* ViewController.swift */; };
 		8B8A6AB71E68019600607BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8A6AB51E68019600607BC4 /* Main.storyboard */; };
 		8B8A6AB91E68019600607BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8A6AB81E68019600607BC4 /* Assets.xcassets */; };
 		8B8A6ABC1E68019600607BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8A6ABA1E68019600607BC4 /* LaunchScreen.storyboard */; };
 		8B8A6AC71E68019600607BC4 /* StrobeLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A6AC61E68019600607BC4 /* StrobeLightTests.swift */; };
 		8B8A6AD21E68019600607BC4 /* StrobeLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A6AD11E68019600607BC4 /* StrobeLightUITests.swift */; };
+		8B8A6AE71E68042000607BC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A6AE61E68042000607BC4 /* AppDelegate.swift */; };
+		8B8A6AEA1E68045900607BC4 /* StrobeLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A6AE91E68045900607BC4 /* StrobeLight.swift */; };
+		8B8A6AF11E6805DD00607BC4 /* StrobeLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A6AF01E6805DC00607BC4 /* StrobeLights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		8B8A6AAE1E68019500607BC4 /* StrobeLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrobeLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B8A6AB11E68019600607BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B8A6AB31E68019600607BC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B8A6AB61E68019600607BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B8A6AB81E68019600607BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B8A6ABB1E68019600607BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,9 @@
 		8B8A6ACD1E68019600607BC4 /* StrobeLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrobeLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8A6AD11E68019600607BC4 /* StrobeLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrobeLightUITests.swift; sourceTree = "<group>"; };
 		8B8A6AD31E68019600607BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8A6AE61E68042000607BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CustomManagement/AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
+		8B8A6AE91E68045900607BC4 /* StrobeLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StrobeLight.swift; path = CustomManagement/Controllers/StobeLight/StrobeLight.swift; sourceTree = "<group>"; };
+		8B8A6AF01E6805DC00607BC4 /* StrobeLights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StrobeLights.swift; path = CustomManagement/ViewModels/StrobeLight/StrobeLights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,11 @@
 		8B8A6AB01E68019500607BC4 /* StrobeLight */ = {
 			isa = PBXGroup;
 			children = (
-				8B8A6AB11E68019600607BC4 /* AppDelegate.swift */,
-				8B8A6AB31E68019600607BC4 /* ViewController.swift */,
-				8B8A6AB51E68019600607BC4 /* Main.storyboard */,
-				8B8A6AB81E68019600607BC4 /* Assets.xcassets */,
-				8B8A6ABA1E68019600607BC4 /* LaunchScreen.storyboard */,
-				8B8A6ABD1E68019600607BC4 /* Info.plist */,
+				8B8A6AE41E68040900607BC4 /* AppDelegate */,
+				8B8A6AE51E68040F00607BC4 /* UI */,
+				8B8A6AE31E68040300607BC4 /* Controllers */,
+				8B8A6AE21E6803FC00607BC4 /* ViewModel */,
+				8B8A6ADF1E6803C500607BC4 /* SupportingFiles */,
 			);
 			path = StrobeLight;
 			sourceTree = "<group>";
@@ -123,6 +124,72 @@
 				8B8A6AD31E68019600607BC4 /* Info.plist */,
 			);
 			path = StrobeLightUITests;
+			sourceTree = "<group>";
+		};
+		8B8A6ADF1E6803C500607BC4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AE01E6803D900607BC4 /* SystemFiles */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8B8A6AE01E6803D900607BC4 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AB81E68019600607BC4 /* Assets.xcassets */,
+				8B8A6ABD1E68019600607BC4 /* Info.plist */,
+			);
+			name = SystemFiles;
+			sourceTree = "<group>";
+		};
+		8B8A6AE21E6803FC00607BC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AED1E68059200607BC4 /* StrobeLight */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B8A6AE31E68040300607BC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AE81E68042B00607BC4 /* StrobeLight */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8B8A6AE41E68040900607BC4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AE61E68042000607BC4 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8B8A6AE51E68040F00607BC4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AB51E68019600607BC4 /* Main.storyboard */,
+				8B8A6ABA1E68019600607BC4 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8B8A6AE81E68042B00607BC4 /* StrobeLight */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AE91E68045900607BC4 /* StrobeLight.swift */,
+			);
+			name = StrobeLight;
+			sourceTree = "<group>";
+		};
+		8B8A6AED1E68059200607BC4 /* StrobeLight */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A6AF01E6805DC00607BC4 /* StrobeLights.swift */,
+			);
+			name = StrobeLight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +261,7 @@
 					8B8A6AAD1E68019500607BC4 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = VX4JL6YFM7;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					8B8A6AC11E68019600607BC4 = {
@@ -262,8 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8A6AB41E68019600607BC4 /* ViewController.swift in Sources */,
-				8B8A6AB21E68019600607BC4 /* AppDelegate.swift in Sources */,
+				8B8A6AE71E68042000607BC4 /* AppDelegate.swift in Sources */,
+				8B8A6AEA1E68045900607BC4 /* StrobeLight.swift in Sources */,
+				8B8A6AF11E6805DD00607BC4 /* StrobeLights.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +484,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VX4JL6YFM7;
 				INFOPLIST_FILE = StrobeLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tecHindustan.StrobeLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,8 +500,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VX4JL6YFM7;
 				INFOPLIST_FILE = StrobeLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tecHindustan.StrobeLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +588,7 @@
 				8B8A6AD81E68019600607BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B8A6AD91E68019600607BC4 /* Build configuration list for PBXNativeTarget "StrobeLightTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +597,7 @@
 				8B8A6ADB1E68019600607BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B8A6ADC1E68019600607BC4 /* Build configuration list for PBXNativeTarget "StrobeLightUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +606,7 @@
 				8B8A6ADE1E68019600607BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
